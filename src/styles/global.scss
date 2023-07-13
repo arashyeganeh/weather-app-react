@@ -1,0 +1,14 @@
+@tailwind base;
+@tailwind components;
+// @tailwind utilities;
+
+@import "_fonts.scss";
+
+body,
+html {
+  font-family: "Lato Regular", "Serif", "Sans-serif", "Arial";
+}
+
+* {
+  cursor: default;
+}

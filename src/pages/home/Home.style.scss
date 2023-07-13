@@ -1,0 +1,20 @@
+#root {
+  @apply text-white bg-neutral-800 overflow-hidden;
+}
+
+.wrapper {
+  $margin: 2.5rem;
+
+  @apply flex shadow-xl rounded-xl;
+  background-image: url("/assets/images/pic/sunny.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  overflow: hidden;
+  margin: $margin;
+  height: calc(100vh - (2 * $margin));
+}
+
+.general {
+  @apply flex flex-col-reverse w-2/3 p-16;
+}

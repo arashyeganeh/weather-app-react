@@ -1,0 +1,15 @@
+.info {
+  @apply flex items-center text-xl space-x-2;
+
+  li {
+    @apply text-center;
+  }
+
+  .temp {
+    @apply font-extrabold text-8xl;
+  }
+
+  .city {
+    @apply font-bold text-4xl;
+  }
+}
