@@ -9,6 +9,14 @@ html {
   font-family: "Lato Regular", "Serif", "Sans-serif", "Arial";
 }
 
+body {
+  @apply bg-neutral-300;
+}
+
 * {
   cursor: default;
+}
+
+#root {
+  @apply flex items-center justify-center h-screen overflow-hidden;
 }

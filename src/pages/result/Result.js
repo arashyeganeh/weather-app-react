@@ -1,7 +1,7 @@
-import "./Home.style.scss"
+import "./Result.style.scss"
 import TemperatureComponent from "../../components/temperature/temperature.component"
 
-function Home() {
+function Result() {
     return <>
         <div className="wrapper">
             <div className="general">
@@ -11,4 +11,4 @@ function Home() {
     </>
 }
 
-export default Home;
+export default Result;
