@@ -1,22 +1,102 @@
-@tailwind base;
-@tailwind components;
-// @tailwind utilities;
-
 @import "_fonts.scss";
 
 body,
 html {
   font-family: "Lato Regular", "Serif", "Sans-serif", "Arial";
+  margin: 0;
+  padding: 0;
 }
 
-body {
-  @apply bg-neutral-300;
-}
-
-* {
-  cursor: default;
-}
+$radius: 0.75rem;
+$bgColor: #020617;
+$margin: 1rem;
+$borderWidth: 0.375rem;
 
 #root {
-  @apply flex items-center justify-center h-screen overflow-hidden;
+  height: 100vh;
+  overflow: hidden;
+  background-color: $bgColor;
+  background-image: linear-gradient(60deg, #fbc2eb 0%, #a6c1ee 100%);
+}
+
+.ant-select {
+  width: 100%;
+  box-sizing: border-box;
+
+  .ant-select-item-option-content {
+    span {
+      display: block;
+      color: #bbbbbb;
+    }
+  }
+
+  .ant-select-selector {
+    box-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1),
+      0 8px 10px -6px rgb(0 0 0 / 0.1);
+  }
+}
+
+.wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: auto;
+  margin: $margin;
+  height: calc(100vh - (2 * $margin));
+  border-radius: $radius;
+  padding: 2rem;
+  box-sizing: border-box;
+  background-color: rgba(black, 40%);
+  backdrop-filter: blur(5px);
+  box-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1),
+    0 8px 10px -6px rgb(0 0 0 / 0.1);
+
+  .info {
+    color: white;
+  }
+
+  .icon {
+    text-align: center;
+    height: 8rem;
+
+    img {
+      height: 100%;
+    }
+  }
+
+  .detail {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 3rem;
+    font-weight: bold;
+    margin-bottom: 1.25rem;
+  }
+
+  .temperature {
+    width: 50%;
+    text-align: right;
+  }
+
+  .location {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    width: 50%;
+    border-left: 0.25rem solid rgba(white, 30%);
+    margin-left: 1rem;
+    padding-left: 1rem;
+    font-size: 1.125rem;
+    font-weight: bold;
+    span {
+      font-size: 1rem;
+      font-weight: normal;
+      margin-top: 0.25rem;
+    }
+  }
+}
+
+h1 {
+  margin: 0;
 }
