@@ -1,3 +1,4 @@
+@import "_reboot.scss";
 @import "_fonts.scss";
 
 body,
@@ -17,6 +18,10 @@ $borderWidth: 0.375rem;
   overflow: hidden;
   background-color: $bgColor;
   background-image: linear-gradient(60deg, #fbc2eb 0%, #a6c1ee 100%);
+}
+
+h1 {
+  text-align: center;
 }
 
 .ant-select {
@@ -53,6 +58,7 @@ $borderWidth: 0.375rem;
 
   .info {
     color: white;
+    min-width: 30%;
   }
 
   .icon {
@@ -83,6 +89,7 @@ $borderWidth: 0.375rem;
     align-items: flex-start;
     justify-content: center;
     flex-direction: column;
+    box-sizing: content-box;
     width: 50%;
     border-left: 0.25rem solid rgba(white, 30%);
     margin-left: 1rem;
@@ -95,8 +102,4 @@ $borderWidth: 0.375rem;
       margin-top: 0.25rem;
     }
   }
-}
-
-h1 {
-  margin: 0;
 }
