@@ -1,6 +1,7 @@
 {
-  "name": "weather-app",
+  "name": "weather-app-react",
   "version": "0.1.0",
+  "description": "Weather app data is displayed through a React app, powered by integration with 'WeatherAPI.com'.",
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.5",
@@ -27,9 +28,7 @@
   },
   "browserslist": {
     "production": [
-      ">0.2%",
-      "not dead",
-      "not op_mini all"
+      ">0.3%, last 5 versions, not dead"
     ],
     "development": [
       "last 1 chrome version",
@@ -39,5 +38,7 @@
   },
   "devDependencies": {
     "react-router-dom": "^6.14.1"
-  }
+  },
+  "author": "Arash Yeganeh",
+  "license": "MIT"
 }

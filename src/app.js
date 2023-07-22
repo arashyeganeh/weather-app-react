@@ -73,6 +73,4 @@ function App() {
   );
 }
 
-/* https://www.amcharts.com/free-animated-svg-weather-icons/ */
-
 export default App;
