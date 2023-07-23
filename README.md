@@ -15,17 +15,16 @@ Before you begin, make sure you have [Node.js](https://nodejs.org/) and [npm](ht
 
 1. Clone this repository to your local machine.
 2. Navigate to the project directory.
-3. Create a file named `config.js` inside the `src` folder.
-4. In the `config.js` file, add the following content:
+4. In the `.env` file, add the following content:
 
-```js
-export const API_URL = "http://api.weatherapi.com/v1";
-export const API_TOKEN = process.env.API_TOKEN || "<API_TOKEN>";
-```
+	```js
+	REACT_APP_API_URL = "http://api.weatherapi.com/v1"
+	REACT_APP_API_TOKEN = "<API_TOKEN>"
+	```
 
 5. Replace `<API_TOKEN>` with your actual WeatherAPI.com API token. If you don't have one, you can sign up for a free account and get your API token from [WeatherAPI.com](https://www.weatherapi.com/).
 
-6. Save the `config.js` file.
+6. Save the `.env` file.
 
 7. To start the development server and run the application, use the following command:
 
