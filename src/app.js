@@ -65,7 +65,7 @@ function App() {
             onSearch={autoCompleteOnSearch}
             onSelect={autoCompleteOnSelect}
           >
-            <Input.Search size="large" placeholder="input here" enterButton />
+            <Input.Search size="large" placeholder="Find weather for a city..." enterButton />
           </AutoComplete>
         </div>
       </div>
